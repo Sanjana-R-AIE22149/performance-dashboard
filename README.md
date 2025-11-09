@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Real-Time High-Performance Dashboard (Next.js 14 + React + Canvas)
 
-## Getting Started
+A fully custom real-time dashboard built with **Next.js 14**, **TypeScript**, **React Client Components**, and **HTML5 Canvas** — without using any chart libraries.
 
-First, run the development server:
+Supports **10,000+ live-updating data points**, rendered at **60 FPS**, powered by a **Web Worker** and optimized canvas drawing.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This project showcases **advanced frontend engineering**, **high-performance rendering**, **React optimization**, and **Next.js App Router architecture**.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Real-Time Data Visualizations
+- **Line Chart**
+ <img width="772" height="336" alt="image" src="https://github.com/user-attachments/assets/41705960-0dc1-44ed-a4be-9f7a0a384085" />
 
-## Learn More
+- **Bar Chart**
+  <img width="745" height="323" alt="image" src="https://github.com/user-attachments/assets/c9d8d9f2-8d4b-497a-8c76-0e7b66b8ba81" />
 
-To learn more about Next.js, take a look at the following resources:
+- **Scatter Plot**
+ <img width="785" height="350" alt="image" src="https://github.com/user-attachments/assets/d9b36afd-c695-48f1-8699-99b22b74a5fc" />
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Heatmap**
+ <img width="1128" height="633" alt="image" src="https://github.com/user-attachments/assets/f3e19a9a-946e-4de3-9c91-e8447c6b6d10" />
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Combined Grid View**
+<img width="245" height="235" alt="image" src="https://github.com/user-attachments/assets/ce1342af-d855-4946-92e1-7d34ce9de1b3" />
 
-## Deploy on Vercel
+- **Focused view for each chart**
+  <img width="1429" height="798" alt="image" src="https://github.com/user-attachments/assets/1d99c324-3bc6-4b2a-9943-8c02302bc989" />
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- 
+  <img width="1600" height="838" alt="image" src="https://github.com/user-attachments/assets/3feffea6-702c-4627-962b-38e33f6d8eb4" />
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Alter Data Rate and watch the visualation live**
+ <img width="245" height="96" alt="image" src="https://github.com/user-attachments/assets/900971e8-5719-4013-8c8c-8a2f33d34907" />
+
+
+
+All charts include:
+- Smooth real-time streaming (100ms interval)
+- Canvas-based rendering
+- Axes with labels
+- High-performance drawing pipeline
+
+---
+
+## Performance Engine
+
+### Web Worker Data Stream (10k+ points)
+- Generates synthetic time-series data
+- Posts updates without blocking UI thread
+- Maintains fixed-size circular buffer
+
+### Canvas Rendering Optimizations
+- `requestAnimationFrame` render loop
+- `useMemo` and `React.memo` to reduce renders
+- Batched drawing operations
+- Per-chart render functions
+- GPU-accelerated canvas
+
+### Smart Memory Management
+- Fixed-size buffers avoid memory leaks
+- Bounded window of data
+- Efficient typed arrays
+
+---
+
+##  Built-In Performance Monitor
+
+The dashboard ships with a live **Performance Panel** showing:
+
+| Metric | Description |
+|--------|-------------|
+| **FPS** | True frames per second (accurate 1-second window) |
+| **CPU Usage %** | Estimated main-thread usage per frame |
+| **JS Heap Memory** | Chrome-supported memory tracking |
+| **Latency** | Simulated network/processing latency |
+
+---
+
+## Tech Stack
+
+- **Next.js 14 App Router**
+- **React 18 Client Components**
+- **TypeScript**
+- **Canvas 2D API**
+- **Web Workers**
+- **TailwindCSS**
+
+Setup:
+Run : Fork this repo and 
+run
+1. npm install
+2. "npm run dev"
+   in the terminal.
+---
+Open: http://localhost:3000/dashboard 
