@@ -22,16 +22,10 @@ export default function DashboardShell() {
           </p>
         </header>
 
-        {/* Charts Grid / Focus Mode */}
+        
         <DashboardGridClient />
 
-        {/* Table */}
-        <section>
-          <h4 className="text-gray-400 mb-2">Raw Data Overview</h4>
-          <DataTable />
-        </section>
-
-        {/* FPS Overlay */}
+      
         <PerformanceMonitor />
       </main>
     </div>
