@@ -42,7 +42,33 @@ All charts include:
 - Canvas-based rendering
 - Axes with labels
 - High-performance drawing pipeline
+---
+##Testing
+1. Can be done using the Stress Test Button
+2. Increase and Decrease the rate of data flow to check usage in cpu, render time and fps in the performance monitor
+   
+---
+##Browser compatibility
+The Real-Time Dashboard is compatible with all modern browsers that support:
 
+1. HTML5 Canvas
+
+2. Web Workers
+
+3. Offloaded rendering loops
+
+4. ES2020+ JavaScript
+
+5. React 18
+
+6. Next.js App Router
+
+#Browsers with full support:
+1. Chrome 80+
+2. Edge 80+
+3. Firefox 75+
+4. Brave
+5. Opera (Chromium based)
 ---
 
 ## Performance Engine
